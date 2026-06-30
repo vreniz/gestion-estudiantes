@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:17
+    container_name: gestion_academica_universidad-postgres
+
+    environment:
+      POSTGRES_DB: gestion_academica_universidad
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+
+    ports:
+      - "5433:5432"
+
+    volumes:
+      - gestion-academica-db-data:/var/lib/postgresql/data
+
+volumes:
+  gestion-academica-db-data:
