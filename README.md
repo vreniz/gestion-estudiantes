@@ -96,10 +96,10 @@ El contenedor expone PostgreSQL en el **puerto 5433** de tu máquina (mapeado al
 
 Tienes dos formas de ejecutar los archivos `.sql`.
 
-### Opción A — Desde DBeaver (recomendada)
+### Desde DBeaver (recomendada)
 
 1. Conéctate a la base (ver arriba).
-2. Abre cada archivo `.sql` con **File → Open File**, o arrástralo al editor de DBeaver.
+2. Abre cada archivo `.sql` con **File → Open File**, copia y pega el  script en el editor de DBeaver.
 3. Asegúrate de que el script apunte a la base correcta (arriba del editor aparece la conexión y la base activa).
 4. Ejecuta **todo el script** con `Alt + X`, o ejecuta una sola sentencia con `Ctrl + Enter` (la del cursor).
 
@@ -116,23 +116,6 @@ Tienes dos formas de ejecutar los archivos `.sql`.
 
 > Importante: respeta este orden. No puedes insertar datos sin las tablas, ni consultar la vista sin haberla creado.
 
-### Opción B — Desde la terminal con Docker
-
-Para entrar a la base de datos y empezar a escribir consultas a mano, copia el siguiente comando completo, pégalo justo ahí al lado del % y presiona Enter:
-
-```bash
-docker exec -it gestion_academica_universidad-postgres psql -U postgres -d gestion_academica_universidad
-```
-
-Si tu contenedor de Docker está encendido, la terminal va a cambiar de aspecto y se pondrá así:
-```bash 
-gestion_academica_universidad=#
-```
-Dentro de la sesión, comandos útiles:
-- `\dt` → listar tablas
-- `\d nombre_tabla` → ver la estructura de una tabla
-- `\l` → listar bases de datos
-- `\q` → salir
 
 ---
 
