@@ -1,5 +1,5 @@
 
-# Gestión Académica Universidad — Base de Datos PostgreSQL
+# Gestión Académica Universidad — Base de Datos PostgreSQL (M4S2)
 
 Proyecto de diseño y manipulación de una base de datos relacional para gestionar **estudiantes, docentes, cursos e inscripciones** de una universidad. Incluye diseño de tablas con restricciones de integridad, inserción de datos, consultas (JOINs, agregaciones, subconsultas), una vista, y control de acceso con transacciones.
 
