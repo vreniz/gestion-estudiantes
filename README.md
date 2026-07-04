@@ -17,7 +17,7 @@ GESTION-ESTUDIANTES/
 ├── task3.sql               # DQL (Data Query Language), DDL y DML: Consultas básicas: JOINs, GROUP BY, HAVING, ALTER, DELETE
 ├── task4.sql               # DQL (Data Query Language): Subconsultas y funciones de agregación
 ├── task5.sql               # DDL Y DQL: Creación de la vista vista_historial_academico
-└── task6.sql               # TCL: Control de acceso (roles, GRANT/REVOKE) y transacciones
+└── task6.sql               # TCL (Transaction Control Language) DCL, DML y DQL.:Control de acceso (roles, GRANT/REVOKE) y transacciones
 ```
 
 ---
