@@ -62,13 +62,13 @@ Desde la carpeta del proyecto (`GESTION-ESTUDIANTES`), en la terminal:
 docker compose up -d
 ```
 
-Verifica que el contenedor esté corriendo:
+Verificar que el contenedor esté corriendo:
 
 ```bash
 docker ps
 ```
 
-Deberías ver el contenedor `gestion_academica_universidad-postgres` en estado *Up*.
+Se debe ver el contenedor `gestion_academica_universidad-postgres` en estado *Up*.
 
 ### 2. Datos de conexión
 
@@ -84,24 +84,24 @@ El contenedor expone PostgreSQL en el **puerto 5433** de tu máquina (mapeado al
 
 ### 3. Conectar desde DBeaver
 
-1. Abre DBeaver y haz clic en **Nueva conexión** (el icono del enchufe arriba a la izquierda).
-2. Selecciona **PostgreSQL** y pulsa *Siguiente*.
-3. Rellena los campos con los datos de la tabla de arriba (recuerda usar el puerto **5433**).
-4. Pulsa **Test Connection** para verificar. Si pide descargar el driver, acéptalo.
-5. Pulsa **Finish**.
+1. Abrir DBeaver y hacer clic en **Nueva conexión** (el icono del enchufe arriba a la izquierda).
+2. Seleccionar **PostgreSQL** y pulsar *Siguiente*.
+3. Rellenar los campos con los datos de la tabla de arriba (recordar usar el puerto **5433**).
+4. Pulsar **Test Connection** para verificar. Si pide descargar el driver, aceptar.
+5. Pulsar **Finish**.
 
 ---
 
 ## Cómo probar los scripts
 
-Tienes dos formas de ejecutar los archivos `.sql`.
+Hay dos formas de ejecutar los archivos `.sql`.
 
 ### Desde DBeaver (recomendada)
 
-1. Conéctate a la base (ver arriba).
-2. Abre cada archivo `.sql` con **File → Open File**, copia y pega el  script en el editor de DBeaver.
-3. Asegúrate de que el script apunte a la base correcta (arriba del editor aparece la conexión y la base activa).
-4. Ejecuta **todo el script** con `Alt + X`, o ejecuta una sola sentencia con `Ctrl + Enter` (la del cursor).
+1. Conectarse a la base (ver arriba).
+2. Abrir cada archivo `.sql` con **File → Open File**, copiar y pegar el  script en el editor de DBeaver.
+3. Asegurarse de que el script apunte a la base correcta (arriba del editor aparece la conexión y la base activa).
+4. Ejecutar **todo el script** con `Alt + X`, o ejecutar una sola sentencia con `Ctrl + Enter` (la del cursor).
 
 **Orden recomendado de ejecución:**
 
@@ -114,7 +114,7 @@ Tienes dos formas de ejecutar los archivos `.sql`.
 6. task6.sql             → roles, permisos y transacciones
 ```
 
-> Importante: respeta este orden. No puedes insertar datos sin las tablas, ni consultar la vista sin haberla creado.
+> Importante: respetar este orden. No se puede insertar datos sin las tablas, ni consultar la vista sin haberlas creado.
 
 
 ---
@@ -144,11 +144,11 @@ Para detenerlo **y borrar todos los datos** (vuelve a empezar de cero):
 docker compose down -v
 ```
 
-> El flag `-v` elimina el volumen `gestion-academica-db-data`, donde se guardan los datos de forma persistente. Úsalo solo si quieres reiniciar la base desde cero.
+> El flag `-v` elimina el volumen `gestion-academica-db-data`, donde se guardan los datos de forma persistente. Usar solo si se quiere reiniciar la base desde cero.
 
 ---
 
 ## Notas
 
-- El puerto local es **5433** (no el 5432 habitual), para evitar conflictos si ya tienes otro PostgreSQL corriendo. Recuérdalo al conectar desde DBeaver.
-- Los datos se guardan en un volumen de Docker, así que persisten aunque apagues el contenedor (mientras no uses `down -v`).
+- El puerto local es **5433** (no el 5432 habitual), para evitar conflictos si ya se tiene otro en PostgreSQL corriendo. Recordarlo al momento de conectar desde DBeaver.
+- Los datos se guardan en un volumen de Docker, así que persisten aunque se apague el contenedor (mientras no se use `down -v`).
