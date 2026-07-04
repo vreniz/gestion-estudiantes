@@ -13,7 +13,7 @@ La base de datos corre en un contenedor **Docker** con **PostgreSQL 17**, y se a
 GESTION-ESTUDIANTES/
 ├── docker-compose.yml      # Configuración del contenedor PostgreSQL
 ├── create_tables.sql       # DDL (Data Definition Language): Creación de tablas y restricciones (PK, FK, UNIQUE, CHECK)
-├── insert-info.sql         # Inserción de datos (estudiantes, docentes, cursos, inscripciones)
+├── insert-info.sql         # DML (Data Manipulation Language): Inserción de datos (estudiantes, docentes, cursos, inscripciones)
 ├── task3.sql               # Consultas básicas: JOINs, GROUP BY, HAVING, ALTER, DELETE
 ├── task4.sql               # Subconsultas y funciones de agregación
 ├── task5.sql               # Creación de la vista vista_historial_academico
