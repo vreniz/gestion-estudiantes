@@ -14,7 +14,7 @@ GESTION-ESTUDIANTES/
 ├── docker-compose.yml      # Configuración del contenedor PostgreSQL
 ├── create_tables.sql       # DDL (Data Definition Language): Creación de tablas y restricciones (PK, FK, UNIQUE, CHECK)
 ├── insert-info.sql         # DML (Data Manipulation Language): Inserción de datos (estudiantes, docentes, cursos, inscripciones)
-├── task3.sql               # Consultas básicas: JOINs, GROUP BY, HAVING, ALTER, DELETE
+├── task3.sql               # DQL (Data Query Language), DDL y DML: Consultas básicas: JOINs, GROUP BY, HAVING, ALTER, DELETE
 ├── task4.sql               # Subconsultas y funciones de agregación
 ├── task5.sql               # Creación de la vista vista_historial_academico
 └── task6.sql               # Control de acceso (roles, GRANT/REVOKE) y transacciones
